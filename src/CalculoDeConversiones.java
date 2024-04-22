@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +15,8 @@ public class CalculoDeConversiones {
                 valorFinal= datos.getValor()*valor;
             }
         }
-        System.out.println("El valor es: "+ valorFinal);
+        JOptionPane.showMessageDialog(null, "El valor equivalente a "+valor+"$\n" +
+                "en su moneda local es de: "+valorFinal);
     }
 
     public void convertirADolar(int posicion, double valor){
@@ -26,6 +28,7 @@ public class CalculoDeConversiones {
                 valorFinal= valor/datos.getValor();
             }
         }
-        System.out.println("El valor es: "+ valorFinal);
+        JOptionPane.showMessageDialog(null, "El valor equivalente a "+valor+
+                "\nen dolares es de: "+valorFinal+"$");
     }
 }

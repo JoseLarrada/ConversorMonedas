@@ -42,18 +42,18 @@ public class ObtensiondeDatos {
     }
     private Map<String, Double> datosFiltrados(){
         Map<String, Double> datos = consumirApi();
-        Map<String, Double> filteredRates = new HashMap<>();
-        filteredRates.put("ARS", datos.get("ARS"));
-        filteredRates.put("BOB", datos.get("BOB"));
-        filteredRates.put("BRL", datos.get("BRL"));
-        filteredRates.put("CLP", datos.get("CLP"));
-        filteredRates.put("COP", datos.get("COP"));
-        filteredRates.put("MXN", datos.get("MXN"));
-        filteredRates.put("PEN", datos.get("PEN"));
-        filteredRates.put("PYG", datos.get("PYG"));
-        filteredRates.put("UYU", datos.get("UYU"));
-        filteredRates.put("VEF", datos.get("VEF"));
-        return filteredRates;
+        Map<String, Double> filtrarPaises = new HashMap<>();
+        filtrarPaises.put("ARS", datos.get("ARS"));
+        filtrarPaises.put("BOB", datos.get("BOB"));
+        filtrarPaises.put("BRL", datos.get("BRL"));
+        filtrarPaises.put("CLP", datos.get("CLP"));
+        filtrarPaises.put("COP", datos.get("COP"));
+        filtrarPaises.put("MXN", datos.get("MXN"));
+        filtrarPaises.put("PEN", datos.get("PEN"));
+        filtrarPaises.put("PYG", datos.get("PYG"));
+        filtrarPaises.put("UYU", datos.get("UYU"));
+        filtrarPaises.put("VEF", datos.get("VEF"));
+        return filtrarPaises;
     }
 
     public List<DatosConversion> datosList(){
